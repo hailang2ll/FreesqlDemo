@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>D:\gitme\FreesqlDemo\Freesql.API\Freesql.API.xml</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Controllers\BaseController.cs" />
+    <Compile Remove="Filters\CheckLoginAttribute.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DMS.Auth" Version="1.2.5.9" />
+    <PackageReference Include="DMS.Autofac" Version="1.2.1" />
+    <PackageReference Include="DMS.Swagger" Version="1.4.7" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Freesql.Contracts\Freesql.Contracts.csproj" />
+    <ProjectReference Include="..\Freesql.Service\Freesql.Service.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Filters\" />
+  </ItemGroup>
+
+
+</Project>

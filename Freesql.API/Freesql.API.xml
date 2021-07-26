@@ -1,0 +1,169 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Freesql.API</name>
+    </assembly>
+    <members>
+        <member name="T:Freesql.API.Controllers.JobLogController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Freesql.API.Controllers.JobLogController.#ctor(Freesql.Contracts.ISysJobLogService)">
+            <summary>
+            
+            </summary>
+            <param name="jobLogService"></param>
+        </member>
+        <member name="M:Freesql.API.Controllers.JobLogController.AddAsync(Freesql.Contracts.Param.AddJobLogParam)">
+            <summary>
+            新增工作日志
+            [HttpPost("Add"), CheckLogin]
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Freesql.API.Controllers.JobLogController.AddTranAsync(Freesql.Contracts.Param.AddJobLogParam)">
+            <summary>
+            事物处理
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Freesql.API.Controllers.JobLogController.DeleteAsync(System.Int64)">
+            <summary>
+            删除日志
+            </summary>
+            <param name="jobLogID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Freesql.API.Controllers.JobLogController.UpdateAsync(System.Int64)">
+            <summary>
+            修改日志
+            </summary>
+            <param name="jobLogID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Freesql.API.Controllers.JobLogController.GetJobLogAsync(System.Int64)">
+            <summary>
+            获取工作日志记录
+            </summary>
+            <param name="jobLogID"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Freesql.API.Controllers.JobLogController.GetJobLogListAsync(System.Int64)">
+            <summary>
+            获取日志集合
+            </summary>
+            <param name="jobLogType"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Freesql.API.Controllers.JobLogController.SearchJobLogAsync(Freesql.Contracts.Param.SearchJobLogParam)">
+            <summary>
+            搜索日志
+            </summary>
+            <param name="param"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Freesql.API.Controllers.WeatherForecastController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Freesql.API.Controllers.WeatherForecastController.#ctor(Microsoft.Extensions.Logging.ILogger{Freesql.API.Controllers.WeatherForecastController})">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+        </member>
+        <member name="M:Freesql.API.Controllers.WeatherForecastController.Get">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Freesql.API.Program">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Freesql.API.Program.Main(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Freesql.API.Program.CreateHostBuilder(System.String[])">
+            <summary>
+            
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Freesql.API.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Freesql.API.Startup.Fsql">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Freesql.API.Startup.Configuration">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Freesql.API.Startup.#ctor(Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="env"></param>
+        </member>
+        <member name="M:Freesql.API.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:Freesql.API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment)">
+            <summary>
+            
+            </summary>
+            <param name="app"></param>
+            <param name="env"></param>
+        </member>
+        <member name="M:Freesql.API.Startup.ConfigureContainer(Autofac.ContainerBuilder)">
+            <summary>
+            
+            </summary>
+            <param name="containerBuilder"></param>
+        </member>
+        <member name="T:Freesql.API.WeatherForecast">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Freesql.API.WeatherForecast.Date">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Freesql.API.WeatherForecast.TemperatureC">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Freesql.API.WeatherForecast.TemperatureF">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:Freesql.API.WeatherForecast.Summary">
+            <summary>
+            
+            </summary>
+        </member>
+    </members>
+</doc>
