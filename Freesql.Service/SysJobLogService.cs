@@ -1,6 +1,6 @@
-﻿using DMS.Common.BaseResult;
-using DMS.Common.Helper;
-using DMS.Redis;
+﻿using DMS.Redis;
+using DMSN.Common.BaseResult;
+using DMSN.Common.Helper;
 using Freesql.Contracts;
 using Freesql.Contracts.Param;
 using Freesql.Entities;

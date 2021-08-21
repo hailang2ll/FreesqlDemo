@@ -1,7 +1,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net461;netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -9,17 +9,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="DMS.Common" Version="2.2.1.1" />
+    <None Remove="Freesql.Contracts.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DMSN.Common" Version="3.2.7.5" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\Freesql.Entities\Freesql.Entities.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <None Update="Freesql.Contracts.xml">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
   </ItemGroup>
 
 </Project>

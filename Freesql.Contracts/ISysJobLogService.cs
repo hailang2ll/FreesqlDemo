@@ -1,4 +1,4 @@
-﻿using DMS.Common.BaseResult;
+﻿using DMSN.Common.BaseResult;
 using Freesql.Contracts.Param;
 using System.Collections.Generic;
 using System.Threading.Tasks;

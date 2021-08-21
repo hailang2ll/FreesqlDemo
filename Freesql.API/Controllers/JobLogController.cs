@@ -1,7 +1,7 @@
 ﻿using DMS.Auth;
 using DMS.Auth.Tickets;
-using DMS.Common.BaseResult;
 using DMS.Redis;
+using DMSN.Common.BaseResult;
 using Freesql.Contracts;
 using Freesql.Contracts.Param;
 using Microsoft.AspNetCore.Mvc;

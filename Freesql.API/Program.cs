@@ -1,8 +1,7 @@
 using Autofac.Extensions.DependencyInjection;
-using DMS.Log4net;
+using DMS.NLogs;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Hosting;
-using NLogs;
 
 namespace Freesql.API
 {
@@ -30,7 +29,7 @@ namespace Freesql.API
                 {
                     webBuilder.UseUrls("http://*:5200");
                     webBuilder.UseNLog($"Configs/nlog.config");
-                    webBuilder.UseLog4net($"Configs/log4net.config");
+                    //webBuilder.UseLog4net($"Configs/log4net.config");
                     webBuilder.UseStartup<Startup>();
                 }).UseServiceProviderFactory(new AutofacServiceProviderFactory());
     }

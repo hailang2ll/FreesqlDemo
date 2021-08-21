@@ -1,4 +1,4 @@
-﻿using DMS.Common.BaseParam;
+﻿using DMSN.Common.BaseParam;
 using System;
 
 namespace Freesql.Contracts.Param
